@@ -1,24 +1,29 @@
 /* import "./App.css"; */
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./pages/Root";
+import ProductDetailsPage from "./pages/ProductDetails";
+import CartPage from "./pages/Cart";
+import HomePage from "./pages/Home";
 
-import { useEffect } from "react";
-import simulatePromiseWithJson from "./services/json/apiRes";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      {
+        path: "/productDetails",
+        element: <ProductDetailsPage />,
+      },
+      {
+        path: "/cart",
+        element: <CartPage />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  useEffect(() => {
-    simulatePromiseWithJson(true)
-      .then((data) => {
-        console.log("Resolved JSON Object:", data);
-      })
-      .catch((error) => {
-        console.log("Error:", error.message);
-      });
-  }, []);
-
-  return (
-    <div>
-      <h1>Shopping web app</h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
-
 export default App;

@@ -1,15 +1,15 @@
 import PRODUCTS_JSON from "/src/services/json/products.json";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+const initial_state = {
   product_list: PRODUCTS_JSON,
   cart_list: [],
   total_products: 0,
 };
 
 const operationsSlice = createSlice({
-  name: "operations",
-  initialState: initialState,
+  name: "operations_redux",
+  initialState: initial_state,
   reducers: {
     /* ADD_PRODUCT(state, action) {
       // Mutating the array directly
@@ -22,7 +22,7 @@ const operationsSlice = createSlice({
       if (index !== -1) state.cartList.splice(index, 1);
     },
  */
-    CHANGE_QUANTITY(state, action) {
+    /* CHANGE_QUANTITY(state, action) {
       // Mutating the array directly
       const { id } = action.payload.p;
       let newQuantity = action.payload.newQuantity;
@@ -30,6 +30,10 @@ const operationsSlice = createSlice({
       if (existingProduct) {
         existingProduct.quantity = newQuantity;
       }
+    }, */
+
+    CHANGE_QUANTITY_TEST(state, action) {
+      state.total_products = action.payload;
     },
 
     /* CHANGE_TOTAL_SUMMA(state, action) {
@@ -40,6 +44,6 @@ const operationsSlice = createSlice({
 
 const store = configureStore({ reducer: operationsSlice.reducer });
 
-export const operationsSliceActions = operationsSlice.actions;
+export const operations_Slice_Actions = operationsSlice.actions;
 
 export default store;

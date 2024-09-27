@@ -2,7 +2,7 @@ import PRODUCTS_JSON from "/src/services/json/products.json";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  products: PRODUCTS_JSON,
+  product_list: PRODUCTS_JSON,
   cart_list: [],
   total_products: 0,
 };
@@ -26,7 +26,7 @@ const operationsSlice = createSlice({
       // Mutating the array directly
       const { id } = action.payload.p;
       let newQuantity = action.payload.newQuantity;
-      const existingProduct = state.cartList.find((p) => p.id === id);
+      const existingProduct = state.cart_list.find((p) => p.id === id);
       if (existingProduct) {
         existingProduct.quantity = newQuantity;
       }

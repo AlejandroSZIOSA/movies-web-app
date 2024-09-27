@@ -11,7 +11,10 @@ export default function HeaderMain() {
       <nav>
         <ul>
           <li>
-            <Link to={"/cart"}> to cart</Link>
+            <Link to={"/cart"}> to Cart</Link>
+          </li>
+          <li>
+            <Link to={"/"}> to Home</Link>
           </li>
         </ul>
       </nav>

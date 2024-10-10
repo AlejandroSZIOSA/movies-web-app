@@ -1,8 +1,8 @@
 [
-  { "id": 1, "title": "m1" },
-  { "id": 2, "title": "m2" },
-  { "id": 3, "title": "m3" },
-  { "id": 4, "title": "m4" },
-  { "id": 5, "title": "m5" },
-  { "id": 6, "title": "m6" }
+  { "id": 1, "title": "m1", "picture": "p1" },
+  { "id": 2, "title": "m2", "picture": "p2" },
+  { "id": 3, "title": "m3", "picture": "p3" },
+  { "id": 4, "title": "m4", "picture": "p4" },
+  { "id": 5, "title": "m5", "picture": "p5" },
+  { "id": 6, "title": "m6", "picture": "p5" }
 ]

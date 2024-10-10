@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 import NavigationMenu from "./NavigationMenu";
 
 export default function HeaderMain() {
-  const totalProducts = useSelector((state) => state.total_products);
+  const totalFavorites = useSelector((state) => state.favorite_list.length);
 
   return (
     <header>
-      <p>header {totalProducts}</p>
+      <p>header {totalFavorites}</p>
       <NavigationMenu />
     </header>
   );

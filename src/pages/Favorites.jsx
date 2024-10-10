@@ -9,14 +9,13 @@ export default function FavoritesPage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  function handleOnClickBtn() {
+  /* function handleOnClickBtn() {
     dispatch(operations_Slice_Actions.CHANGE_QUANTITY_TEST(2)); //works :)
-  }
+  } */
 
   return (
     <>
-      <div>Cart Page</div>
-      <button onClick={handleOnClickBtn}>Change Total Product</button>
+      <div>Favorite Page</div>
       <button onClick={() => navigate("..")}> Go back</button>
     </>
   );

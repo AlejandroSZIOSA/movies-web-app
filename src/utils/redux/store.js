@@ -1,27 +1,23 @@
 import MOVIES_JSON from "/src/services/json/movies.json";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const initial_state = {
-  product_list: MOVIES_JSON,
-  cart_list: [],
-  total_products: 0,
-};
-
-const operationsSlice = createSlice({
+const favoritesSlice = createSlice({
   name: "operations_redux",
-  initialState: initial_state,
+  initialState: {
+    favorite_list: [],
+  },
   reducers: {
-    /* ADD_PRODUCT(state, action) {
+    ADD_PRODUCT(state, action) {
       // Mutating the array directly
-      state.cartList.push(action.payload);
+      state.favorite_list.push(action.payload);
     },
 
-    REMOVE_PRODUCT(state, action) {
+    /*   REMOVE_PRODUCT(state, action) {
       // Mutating the array directly
       const index = state.cartList.findIndex((p) => p.id === action.payload);
       if (index !== -1) state.cartList.splice(index, 1);
-    },
- */
+    }, */
+
     /* CHANGE_QUANTITY(state, action) {
       // Mutating the array directly
       const { id } = action.payload.p;
@@ -32,9 +28,9 @@ const operationsSlice = createSlice({
       }
     }, */
 
-    CHANGE_QUANTITY_TEST(state, action) {
+    /* CHANGE_QUANTITY_TEST(state, action) {
       state.total_products = action.payload;
-    },
+    }, */
 
     /* CHANGE_TOTAL_SUMMA(state, action) {
       state.totalSuma = action.payload.totalSuma;
@@ -42,8 +38,8 @@ const operationsSlice = createSlice({
   },
 });
 
-const store = configureStore({ reducer: operationsSlice.reducer });
+const store = configureStore({ reducer: favoritesSlice.reducer });
 
-export const operations_Slice_Actions = operationsSlice.actions;
+export const operations_Slice_Actions = favoritesSlice.actions;
 
 export default store;

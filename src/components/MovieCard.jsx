@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MovieCard({ movie }) {
   const { title, picture, id } = movie;
@@ -7,7 +8,9 @@ export default function MovieCard({ movie }) {
       <h2>{title}</h2>
       <p>{picture}</p>
       <p>{id}</p>
-      <button>Details</button>
+      <button>
+        <Link to={`/Details/${id}`}>Details</Link>
+      </button>
     </article>
   );
 }

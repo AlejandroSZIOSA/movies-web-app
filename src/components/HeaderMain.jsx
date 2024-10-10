@@ -11,10 +11,10 @@ export default function HeaderMain() {
       <nav>
         <ul>
           <li>
-            <Link to={"/cart"}> to Cart</Link>
+            <Link to={"/Favorites"}> to Favorites list</Link>
           </li>
           <li>
-            <Link to={"/"}> to Home</Link>
+            <Link to={"/"}> To last movies</Link>
           </li>
         </ul>
       </nav>

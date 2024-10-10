@@ -1,4 +1,4 @@
-import PRODUCTS_JSON from "/src/services/json/products.json";
+import PRODUCTS_JSON from "/src/services/json/movies.json";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const initial_state = {

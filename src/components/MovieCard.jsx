@@ -1,16 +1,16 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { operations_Slice_Actions } from "../utils/redux/store";
+import { favorites_Slice_Actions } from "../utils/redux/store";
 
 export default function MovieCard({ movie }) {
+  const { title, picture, id } = movie;
   const dispatch = useDispatch();
 
   function handleAddToFavorites() {
-    const favorite = { title: "f1", description: "f2" };
-    dispatch(operations_Slice_Actions.ADD_PRODUCT(favorite));
+    const copyMovie = { ...movie }; //Copy Object
+    dispatch(favorites_Slice_Actions.ADD_PRODUCT(copyMovie));
   }
-  const { title, picture, id } = movie;
+
   return (
     <article>
       <h2>{title}</h2>

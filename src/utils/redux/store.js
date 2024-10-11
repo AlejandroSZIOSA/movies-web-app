@@ -2,7 +2,7 @@ import MOVIES_JSON from "/src/services/json/movies.json";
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const favoritesSlice = createSlice({
-  name: "operations_redux",
+  name: "favorites",
   initialState: {
     favorite_list: [],
   },
@@ -12,11 +12,13 @@ const favoritesSlice = createSlice({
       state.favorite_list.push(action.payload);
     },
 
-    /*   REMOVE_PRODUCT(state, action) {
-      // Mutating the array directly
-      const index = state.cartList.findIndex((p) => p.id === action.payload);
-      if (index !== -1) state.cartList.splice(index, 1);
-    }, */
+    //Remove Item by Id
+    REMOVE_FAVORITE(state, action) {
+      const itemId = action.payload;
+      state.favorite_list = state.favorite_list.filter(
+        (item) => item.id !== itemId
+      );
+    },
 
     /* CHANGE_QUANTITY(state, action) {
       // Mutating the array directly
@@ -40,6 +42,6 @@ const favoritesSlice = createSlice({
 
 const store = configureStore({ reducer: favoritesSlice.reducer });
 
-export const operations_Slice_Actions = favoritesSlice.actions;
+export const favorites_Slice_Actions = favoritesSlice.actions;
 
 export default store;

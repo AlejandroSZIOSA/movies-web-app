@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Outlet } from "react-router-dom";
 
 import HeaderMain from "../components/HeaderMain";

@@ -20,8 +20,6 @@ export default function HomePage() {
       <h1>Last Movies</h1>
       <section>
         <SearchBar movies={MOVIES_JSON} />
-      </section>
-      <section>
         <MovieList movies={MOVIES_JSON} />
       </section>
     </main>

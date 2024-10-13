@@ -11,13 +11,13 @@ export default function MovieCard({ movie }) {
   const dispatch = useDispatch();
 
   function handleAddFavorite() {
-    if (!checkDuplicateFavorite()) {
+    if (!checkFavoriteDuplicateId()) {
       const copyMovie = { ...movie }; //Copy Object
       dispatch(favorites_Slice_Actions.ADD_PRODUCT(copyMovie));
     }
   }
 
-  function checkDuplicateFavorite() {
+  function checkFavoriteDuplicateId() {
     let isDuplicate = false;
     for (let i = 0; i < favorites.length; i++) {
       if (favorites[i].id === id) {

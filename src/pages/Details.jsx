@@ -8,7 +8,8 @@ export default function DetailsPage() {
     <main>
       <h1>Product details page</h1>
       <h2>Details</h2>
-      <p></p>
+      <p>id :{movieId}</p>
+      <p>title:{movieTitle}</p>
     </main>
   );
 }

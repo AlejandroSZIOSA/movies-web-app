@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { favorites_Slice_Actions } from "../utils/redux/store";
 
 export default function MovieCard({ movie }) {
-  const { title, picture, id } = movie;
+  const { id, title, picture } = movie;
 
   const favorites = useSelector((state) => state.favorite_list);
   const dispatch = useDispatch();
@@ -35,7 +35,9 @@ export default function MovieCard({ movie }) {
       <p>{id}</p>
       <button onClick={handleAddFavorite}>Add to Favorite List</button>
       <button>
-        <Link to={`/details/${id}/${title}`}>Details</Link>
+        <Link to={`/details/${id}/${title}`} query:movie>
+          Details
+        </Link>
       </button>
     </article>
   );

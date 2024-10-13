@@ -4,7 +4,7 @@ export default function NavigationMenu() {
     <>
       <ul>
         <li>
-          <Link to={"/Favorites"}> to Favorites list</Link>
+          <Link to={"/favorites"}> to Favorites list</Link>
         </li>
         <li>
           <Link to={"/"}> To last movies</Link>

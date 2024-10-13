@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       {
-        path: "/Details/:movieId",
+        path: "/details/:movieId/:movieTitle",
         element: <DetailsPage />,
       },
       {
-        path: "/Favorites",
+        path: "/favorites",
         element: <FavoritesPage />,
       },
     ],

@@ -35,7 +35,7 @@ export default function MovieCard({ movie }) {
       <p>{id}</p>
       <button onClick={handleAddFavorite}>Add to Favorite List</button>
       <button>
-        <Link to={`/Details/${id}`}>Details</Link>
+        <Link to={`/details/${id}/${title}`}>Details</Link>
       </button>
     </article>
   );

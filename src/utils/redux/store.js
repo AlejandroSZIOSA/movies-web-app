@@ -40,8 +40,22 @@ const favoritesSlice = createSlice({
   },
 });
 
-const store = configureStore({ reducer: favoritesSlice.reducer });
+const moviesSlice = createSlice({
+  name: "movies",
+  initialState: {
+    movie_list: MOVIES_JSON,
+  },
+  reducers: {
+    /* TODO */
+  },
+});
+
+const store_ = configureStore({
+  //Configure multiple Slices
+  reducer: { favorites_: favoritesSlice.reducer, movies_: moviesSlice.reducer },
+});
 
 export const favorites_Slice_Actions = favoritesSlice.actions;
+export const movies_Slice_Actions = moviesSlice.actions;
 
-export default store;
+export default store_;

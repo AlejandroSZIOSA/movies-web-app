@@ -6,7 +6,7 @@ import { favorites_Slice_Actions } from "../utils/redux/store";
 export default function MovieCard({ movie }) {
   const { id, title, picture } = movie;
 
-  const favorites = useSelector((state) => state.favorite_list);
+  const favorites = useSelector((state) => state.favorites_.favorite_list);
   const dispatch = useDispatch();
 
   function handleAddFavorite() {

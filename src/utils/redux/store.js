@@ -55,6 +55,7 @@ const store_ = configureStore({
   reducer: { favorites_: favoritesSlice.reducer, movies_: moviesSlice.reducer },
 });
 
+//Export multiple slices
 export const favorites_Slice_Actions = favoritesSlice.actions;
 export const movies_Slice_Actions = moviesSlice.actions;
 

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { favorites_Slice_Actions } from "../utils/redux/store";
@@ -35,9 +34,7 @@ export default function MovieCard({ movie }) {
       <p>{id}</p>
       <button onClick={handleAddFavorite}>Add to Favorite List</button>
       <button>
-        <Link to={`/details/${id}/${title}`} query:movie>
-          Details
-        </Link>
+        <Link to={`/details/${id}/${title}`}>Details</Link>
       </button>
     </article>
   );

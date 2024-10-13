@@ -1,7 +1,7 @@
 import { useState } from "react";
+import MovieList from "./MovieList";
 
 export default function SearchBar({ movies }) {
-  // State to hold the search input
   const [searchTerm, setSearchTerm] = useState("");
 
   // Function to handle search term changes
@@ -10,7 +10,7 @@ export default function SearchBar({ movies }) {
   };
 
   // Filter the MOVIES_JSON based on the search input
-  const filteredData = movies.filter((m) =>
+  const filteredMovies = movies.filter((m) =>
     m.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   return (
@@ -21,13 +21,7 @@ export default function SearchBar({ movies }) {
         value={searchTerm}
         onChange={handleChange} // Call handleChange on input change
       />
-
-      {/* Render the filtered list */}
-      <ul>
-        {filteredData.map((m) => (
-          <li key={m.id}>{m.title}</li>
-        ))}
-      </ul>
+      <MovieList movies={filteredMovies} />
     </>
   );
 }

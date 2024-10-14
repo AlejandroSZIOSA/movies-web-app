@@ -1,5 +1,25 @@
 import MOVIES_JSON from "/src/services/json/movies.json";
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import {
+  configureStore,
+  createSlice,
+  createAsyncThunk,
+} from "@reduxjs/toolkit";
+
+import axios from "axios";
+
+const API_URL = "http://localhost:4000/";
+
+export const fetch_movies = createAsyncThunk(
+  "movies/fetch_movies",
+  async () => {
+    try {
+      const res = await axios.get(API_URL);
+      return res.data; //Payload
+    } catch (error) {
+      console.error.message;
+    }
+  }
+);
 
 const favoritesSlice = createSlice({
   name: "favorites",
@@ -43,10 +63,26 @@ const favoritesSlice = createSlice({
 const moviesSlice = createSlice({
   name: "movies",
   initialState: {
-    movie_list: MOVIES_JSON,
+    movie_list: [],
+    status: "idle",
+    error: null,
   },
   reducers: {
     /* TODO */
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetch_movies.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetch_movies.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.movie_list = action.payload;
+      })
+      .addCase(fetch_movies.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message;
+      });
   },
 });
 

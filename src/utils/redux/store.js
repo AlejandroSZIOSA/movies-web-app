@@ -3,18 +3,17 @@ import {
   createSlice,
   createAsyncThunk,
 } from "@reduxjs/toolkit";
-
 import axios from "axios";
-import { MY_BEARER_TOKEN } from "../../services/api-host";
 
-const API_URL = "https://api.themoviedb.org/3/movie/now_playing";
+import { BASE_API_URL } from "../../services/api-host";
+import { MY_BEARER_TOKEN } from "../../services/api-host";
 
 // console.log(MY_BEARER_TOKEN);
 export const fetch_movies = createAsyncThunk(
   "movies/fetch_movies",
   async () => {
     try {
-      const res = await axios.get(API_URL, {
+      const res = await axios.get(BASE_API_URL, {
         headers: {
           Authorization: `Bearer ${MY_BEARER_TOKEN}`,
           "Content-Type": "application/json",

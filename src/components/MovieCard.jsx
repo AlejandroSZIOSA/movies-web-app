@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { favorites_Slice_Actions } from "../utils/redux/store";
-import { BASE_URL } from "../services/api-host";
+import { BASE_POSTER_URL } from "../services/api-host";
 
 export default function MovieCard({ movie }) {
   const { id, title, overview, release_date } = movie;

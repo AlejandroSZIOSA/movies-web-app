@@ -6,7 +6,6 @@ import {
 
 import axios from "axios";
 import { MY_BEARER_TOKEN } from "../../services/api-host";
-import { API_KEY } from "../../services/api-host";
 
 const API_URL = "https://api.themoviedb.org/3/movie/now_playing";
 

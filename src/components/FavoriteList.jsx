@@ -15,7 +15,7 @@ export default function FavoriteList() {
         <thead>
           <tr>
             <th>Title</th>
-            <th>Picture</th>
+            <th>Release Date</th>
             <th>Remove</th>
           </tr>
         </thead>
@@ -23,7 +23,7 @@ export default function FavoriteList() {
           {favorites.map((m) => (
             <tr key={m.id}>
               <td>{m.title}</td>
-              <td>{m.picture}</td>
+              <td>{m.release_date}</td>
               <td>
                 <button onClick={() => handleRemoveFavorite(m.id)}>🗑️</button>
               </td>

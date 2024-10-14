@@ -32,7 +32,7 @@ export default function HomePage() {
         <ul>
           {movies.map((m) => (
             <li key={m.id}>
-              <p>{m.name}</p>
+              <p>{m.original_title}</p>
             </li>
           ))}
         </ul>

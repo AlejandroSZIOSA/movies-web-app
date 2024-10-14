@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# my git ignores
+/src/services/api-private-key.js
+/src/services/api-host.js

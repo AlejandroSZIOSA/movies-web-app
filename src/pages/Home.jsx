@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchMovies_ } from "../utils/redux/store";
 import SearchBar from "../components/SearchBar";
+import MetaTags from "../seo/MetaTags";
 
 export default function HomePage() {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ export default function HomePage() {
 
   return (
     <main>
+      <MetaTags title="Home page" description="Search the Latest movies" />
       <h1>Latest Movies 2024</h1>
       <section>
         <SearchBar movies={MOVIES} />

@@ -11,7 +11,7 @@ export default function FavoritesPage() {
     <main>
       <h1>Favorite List</h1>
       <FavoriteList />
-      <BackBtn onClick={() => navigate("..")} />
+      <BackBtn onClickFn={() => navigate("..")} />
     </main>
   );
 }

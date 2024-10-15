@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import NavigationMenu from "./NavigationMenu";
 import favoriteIcon from "/src/assets/favorite-icon.svg";
+import { tmdbLogo } from "../assets/tmdb-logo-svg";
 import "/src/styles/headerMain.css";
 
 export default function HeaderMain() {
@@ -10,6 +11,9 @@ export default function HeaderMain() {
 
   return (
     <header>
+      <div>
+        <img src={`${tmdbLogo}`} alt="logo" width="80" height="auto" />
+      </div>
       <div className="nav-container">
         <NavigationMenu />
       </div>

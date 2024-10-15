@@ -14,7 +14,7 @@ export default function DetailsPage() {
 
   return (
     <main>
-      <h1>Product details page</h1>
+      <h1>Movie Details</h1>
       <img
         src={`${BASE_POSTER_URL}/${poster_path}`}
         width="500"

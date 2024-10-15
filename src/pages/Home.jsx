@@ -26,7 +26,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <h1>Latest Movies</h1>
+      <h1>Latest Movies 2024</h1>
       <section>
         <SearchBar movies={MOVIES} />
       </section>

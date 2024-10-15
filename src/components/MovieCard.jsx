@@ -4,9 +4,7 @@ import { FAVORITES_SLICE_ACTIONS } from "../utils/redux/store";
 import { BASE_POSTER_URL } from "../services/api-host";
 
 export default function MovieCard({ movie }) {
-  const { id, title, overview, release_date } = movie;
-
-  const baseImageUrl = "https://image.tmdb.org/t/p/w500"; // Poster image :)
+  const { id, title, release_date, poster_path } = movie;
 
   const favorites = useSelector((state) => state.favorites_.favorite_list);
   const dispatch = useDispatch();
@@ -32,10 +30,17 @@ export default function MovieCard({ movie }) {
   return (
     <article>
       <h2>{title}</h2>
+      <img
+        src={`${BASE_POSTER_URL}/${poster_path}`}
+        width="200"
+        height="200"
+      ></img>
+
       <p>{release_date}</p>
       <button onClick={handleAddFavorite}>Add to Favorite List</button>
       <button>
         {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
+        {/* Send an Object to a page  */}
         <Link to="/details" state={{ movie }}>
           Details
         </Link>

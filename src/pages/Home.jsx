@@ -7,7 +7,7 @@ export default function HomePage() {
   const dispatch = useDispatch();
   const MOVIES = useSelector((state) => state.movies_.movie_list);
   const status = useSelector((state) => state.movies_.status);
-  /* const error = useSelector((state) => state.movies_.error); */
+  const error = useSelector((state) => state.movies_.error);
 
   useEffect(() => {
     if (status === "idle") {
@@ -16,14 +16,17 @@ export default function HomePage() {
     console.log(MOVIES);
   }, [status, dispatch]);
 
-  if (status === "loading" || status === "failed") {
+  if (status === "loading...") {
     return <p>{status}</p>;
+  }
+
+  if (status === "failed") {
+    return <p>Failed to fetch data: {error}</p>;
   }
 
   return (
     <main>
       <h1>Latest Movies</h1>
-
       <section>
         <SearchBar movies={MOVIES} />
       </section>

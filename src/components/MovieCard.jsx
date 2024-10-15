@@ -37,7 +37,9 @@ export default function MovieCard({ movie }) {
       ></img>
 
       <p>{release_date}</p>
-      <button onClick={handleAddFavorite}>Add to Favorite List</button>
+      <button id="addFavoriteBtn" onClick={handleAddFavorite}>
+        Add to Favorite List
+      </button>
       <button>
         {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
         {/* Send an Object to a page  */}

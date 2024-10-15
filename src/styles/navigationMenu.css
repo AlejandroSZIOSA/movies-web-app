@@ -1,9 +1,19 @@
-.nav-list-container {
-  display: flex;
+.nav-list__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.nav-list-container li {
-  list-style: none;
-  padding-right: 10px;
+.nav-list__item {
+  display: inline;
+  margin-right: 15px;
   font-size: x-large;
+}
+
+.nav-list__item Link {
+  text-decoration: none;
+}
+
+.nav-list__item Link:hover {
+  text-decoration: underline;
 }

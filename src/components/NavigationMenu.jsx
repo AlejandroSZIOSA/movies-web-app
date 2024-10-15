@@ -4,11 +4,11 @@ import "/src/styles/navigationMenu.css";
 export default function NavigationMenu() {
   return (
     <>
-      <ul className="nav-list-container">
-        <li>
+      <ul className="nav-list__items">
+        <li className="nav-list__item">
           <Link to={"/"}> Home</Link>
         </li>
-        <li>
+        <li className="nav-list__item">
           <Link to={"/favorites"}> Favorites</Link>
         </li>
       </ul>

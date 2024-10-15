@@ -10,7 +10,7 @@ export default function HeaderMain() {
   );
 
   return (
-    <header>
+    <header className="main-header">
       <div>
         <img src={`${tmdbLogo}`} alt="logo" width="80" height="auto" />
       </div>

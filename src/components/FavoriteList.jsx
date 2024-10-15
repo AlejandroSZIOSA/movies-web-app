@@ -1,12 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
-import { favorites_Slice_Actions } from "../utils/redux/store";
+import { FAVORITES_SLICE_ACTIONS } from "../utils/redux/store";
 
 export default function FavoriteList() {
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.favorites_.favorite_list);
 
   function handleRemoveFavorite(movieId) {
-    dispatch(favorites_Slice_Actions.REMOVE_FAVORITE(movieId)); //works :)
+    dispatch(FAVORITES_SLICE_ACTIONS.REMOVE_FAVORITE(movieId)); //works :)
   }
 
   return (

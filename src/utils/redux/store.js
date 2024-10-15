@@ -9,8 +9,8 @@ import { BASE_API_URL } from "../../services/api-host";
 import { MY_BEARER_TOKEN } from "../../services/api-host";
 
 // console.log(MY_BEARER_TOKEN);
-export const fetch_movies = createAsyncThunk(
-  "movies/fetch_movies",
+export const fetchMovies_ = createAsyncThunk(
+  "movies/fetchMovies_",
   async () => {
     try {
       const res = await axios.get(BASE_API_URL, {
@@ -77,14 +77,14 @@ const moviesSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetch_movies.pending, (state) => {
+      .addCase(fetchMovies_.pending, (state) => {
         state.status = "loading";
       })
-      .addCase(fetch_movies.fulfilled, (state, action) => {
+      .addCase(fetchMovies_.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.movie_list = action.payload;
       })
-      .addCase(fetch_movies.rejected, (state, action) => {
+      .addCase(fetchMovies_.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
       });
@@ -97,7 +97,7 @@ const store_ = configureStore({
 });
 
 //Export multiple slices
-export const favorites_Slice_Actions = favoritesSlice.actions;
-export const movies_Slice_Actions = moviesSlice.actions;
+export const FAVORITES_SLICE_ACTIONS = favoritesSlice.actions;
+export const MOVIES_SLICE_ACTIONS = moviesSlice.actions;
 
 export default store_;

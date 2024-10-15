@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetch_movies } from "../utils/redux/store";
+import { fetchMovies_ } from "../utils/redux/store";
 import SearchBar from "../components/SearchBar";
 
 export default function HomePage() {
@@ -11,7 +11,7 @@ export default function HomePage() {
 
   useEffect(() => {
     if (status === "idle") {
-      dispatch(fetch_movies());
+      dispatch(fetchMovies_());
     }
     console.log(MOVIES);
   }, [status, dispatch]);

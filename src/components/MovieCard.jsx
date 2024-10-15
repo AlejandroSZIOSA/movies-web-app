@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { favorites_Slice_Actions } from "../utils/redux/store";
+import { FAVORITES_SLICE_ACTIONS } from "../utils/redux/store";
 import { BASE_POSTER_URL } from "../services/api-host";
 
 export default function MovieCard({ movie }) {
@@ -14,7 +14,7 @@ export default function MovieCard({ movie }) {
   function handleAddFavorite() {
     if (!checkFavoriteDuplicateId()) {
       const copyMovie = { ...movie }; //Copy Object
-      dispatch(favorites_Slice_Actions.ADD_PRODUCT(copyMovie));
+      dispatch(FAVORITES_SLICE_ACTIONS.ADD_PRODUCT(copyMovie));
     }
   }
 

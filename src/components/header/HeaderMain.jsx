@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import NavigationMenu from "./NavigationMenu";
+import NavigationMenu from "../nav-menu/NavigationMenu";
 import favoriteIcon from "/src/assets/favorite-icon.svg";
-import { tmdbLogo } from "../assets/tmdb-logo-svg";
-import "/src/styles/headerMain.css";
+import { tmdbLogo } from "../../assets/tmdb-logo-svg";
+import "./HeaderMain.css";
 
 export default function HeaderMain() {
   const totalFavorites = useSelector(

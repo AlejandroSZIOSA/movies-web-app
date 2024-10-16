@@ -1,6 +1,6 @@
 .movie-card__article {
-  /*   width: 300px;
-  margin: 20px; */
+  width: 380px;
+  margin: 20px;
   background-color: #dd6464;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,6 +23,5 @@
 .buttons-container {
   display: flex;
   justify-content: space-around;
-  width: 330px;
   padding-bottom: 20px;
 }

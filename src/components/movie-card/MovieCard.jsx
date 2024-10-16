@@ -30,11 +30,11 @@ export default function MovieCard({ movie }) {
 
   return (
     <article className="movie-card__article">
-      <h2>{title}</h2>
+      <h2>📽️</h2>
       <div className="movie-poster__container">
         <img
           src={`${BASE_POSTER_URL}/${poster_path}`}
-          width="330"
+          width="auto"
           height="auto"
         ></img>
       </div>

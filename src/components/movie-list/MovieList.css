@@ -1,9 +1,10 @@
-/* .movies-list__container {
-  display: "inline-flex";
-  flex-direction: column;
-} */
+.movies-list__container {
+  display: contents;
+  list-style: none;
+}
 
-.movie-list-item {
+/* .movie-list-item {
   display: flex;
   padding-bottom: 20px;
 }
+ */

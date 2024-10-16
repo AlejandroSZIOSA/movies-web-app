@@ -1,9 +1,28 @@
-/* .movie-card__article p {
+.movie-card__article {
+  /*   width: 300px;
+  margin: 20px; */
+  background-color: #dd6464;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movie-card__article h2 {
   text-align: center;
-} */
+}
 .movie-poster__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
+}
+
+.movie-card__article p {
+  text-align: center;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  width: 330px;
+  padding-bottom: 20px;
 }

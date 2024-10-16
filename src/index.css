@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+body {
+  width: 412px;
+  height: 915px;
+  background-color: aliceblue;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

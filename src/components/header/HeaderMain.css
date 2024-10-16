@@ -5,16 +5,13 @@
   height: 50px;
   background-color: rgb(255, 211, 164);
 }
-
 .logo {
   padding: 5px;
 }
-
 .nav-container {
   display: flex;
   /* background-color: antiquewhite; */
 }
-
 .menu-container {
   display: flex;
   align-items: center;

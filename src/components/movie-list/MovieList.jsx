@@ -6,7 +6,7 @@ export default function MovieList({ movies }) {
     <>
       <ul className="movies-list__container">
         {movies.map((m) => (
-          <li key={m.id}>
+          <li className="movie-list-item" key={m.id}>
             <MovieCard movie={m} />
           </li>
         ))}

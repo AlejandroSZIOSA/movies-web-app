@@ -41,16 +41,18 @@ export default function MovieCard({ movie }) {
       <p>
         Release date: <strong> {release_date}</strong>
       </p>
-      <button id="addFavoriteBtn" onClick={handleAddFavorite}>
-        Add to Favorite List
-      </button>
-      <button>
-        {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
-        {/* Send an Object to a page  */}
-        <Link to="/details" state={{ movie }}>
-          Details
-        </Link>
-      </button>
+      <div className="buttons-container">
+        <button>
+          {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
+          {/* Send an Object to a page  */}
+          <Link to="/details" state={{ movie }}>
+            Details
+          </Link>
+        </button>
+        <button id="addFavoriteBtn" onClick={handleAddFavorite}>
+          Add to Favorite List
+        </button>
+      </div>
     </article>
   );
 }

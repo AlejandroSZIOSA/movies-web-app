@@ -18,7 +18,6 @@ export default function SearchBar({ movies }) {
       style={{
         display: "flex",
         flexDirection: "column",
-        alignContent: "center",
         alignItems: "center",
       }}
     >

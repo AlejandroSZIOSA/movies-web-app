@@ -1,7 +1,6 @@
 .home-main {
   display: flex;
   flex-direction: column;
-  width: 412px;
-  height: 915px;
   align-items: center;
+  justify-content: center;
 }

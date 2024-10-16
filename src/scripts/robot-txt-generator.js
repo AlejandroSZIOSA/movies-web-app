@@ -2,11 +2,13 @@ import fs from "fs";
 
 const generateRobotsTxt = () => {
   const environment = process.env.NODE_ENV;
-  let content = "User-agent: */n";
+  let content = "User-agent: *\n";
   if (environment === "production") {
-    content = "User-agent: */n";
+    //Allows all pages
+    content = "User-agent: *\n";
   } else {
-    content += "Disallow:*/n";
+    //Block all pages in development
+    content += "Disallow:*\n";
   }
 
   //Can Add more rules Here

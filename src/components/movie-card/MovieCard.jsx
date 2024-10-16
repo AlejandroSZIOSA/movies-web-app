@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { FAVORITES_SLICE_ACTIONS } from "../utils/redux/store";
-import { BASE_POSTER_URL } from "../services/api-host";
+import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
+import { BASE_POSTER_URL } from "../../services/api-host";
+import "./MovieCard.css";
 
 export default function MovieCard({ movie }) {
   const { id, title, release_date, poster_path } = movie;
@@ -28,15 +29,18 @@ export default function MovieCard({ movie }) {
   }
 
   return (
-    <article>
+    <article className="movie-card__article">
       <h2>{title}</h2>
-      <img
-        src={`${BASE_POSTER_URL}/${poster_path}`}
-        width="200"
-        height="200"
-      ></img>
-
-      <p>{release_date}</p>
+      <div className="movie-poster__container">
+        <img
+          src={`${BASE_POSTER_URL}/${poster_path}`}
+          width="330"
+          height="auto"
+        ></img>
+      </div>
+      <p>
+        Release date: <strong> {release_date}</strong>
+      </p>
       <button id="addFavoriteBtn" onClick={handleAddFavorite}>
         Add to Favorite List
       </button>

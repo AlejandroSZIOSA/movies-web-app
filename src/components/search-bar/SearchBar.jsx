@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MovieList from "./MovieList";
+import MovieList from "../movie-list/MovieList";
 
 export default function SearchBar({ movies }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,7 +14,14 @@ export default function SearchBar({ movies }) {
     m.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignContent: "center",
+        alignItems: "center",
+      }}
+    >
       <input
         type="text"
         placeholder="Search..."
@@ -22,6 +29,6 @@ export default function SearchBar({ movies }) {
         onChange={handleChange} // Call handleChange on input change
       />
       <MovieList movies={filteredMovies} />
-    </>
+    </div>
   );
 }

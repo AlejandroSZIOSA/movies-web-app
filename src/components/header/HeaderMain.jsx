@@ -11,9 +11,13 @@ export default function HeaderMain() {
 
   return (
     <header className="main-header">
-      <div>
-        <img src={`${tmdbLogo}`} alt="logo" width="80" height="auto" />
-      </div>
+      <img
+        className="logo"
+        src={`${tmdbLogo}`}
+        alt="logo"
+        width="70"
+        height="auto"
+      />
       <div className="nav-container">
         <NavigationMenu />
       </div>

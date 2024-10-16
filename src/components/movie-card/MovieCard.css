@@ -1,0 +1,9 @@
+/* .movie-card__article p {
+  text-align: center;
+} */
+.movie-poster__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}

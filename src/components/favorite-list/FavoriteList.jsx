@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { FAVORITES_SLICE_ACTIONS } from "../utils/redux/store";
+import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
 
 export default function FavoriteList() {
   const dispatch = useDispatch();

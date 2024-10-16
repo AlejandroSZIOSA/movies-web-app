@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchMovies_ } from "../utils/redux/store";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/search-bar/SearchBar";
 import MetaTags from "../seo/MetaTags";
+import "../styles/Home.css";
 
 export default function HomePage() {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ export default function HomePage() {
   }
 
   return (
-    <main>
+    <main className="home-main">
       <MetaTags title="Home page" description="Search the Latest movies" />
       <h1>Latest Movies 2024</h1>
       <section>

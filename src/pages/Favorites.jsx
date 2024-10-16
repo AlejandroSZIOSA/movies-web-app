@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import FavoriteList from "../components/FavoriteList";
+import FavoriteList from "../components/favorite-list/FavoriteList";
 import BackBtn from "../components/common/Button/BackBtn";
 
 export default function FavoritesPage() {

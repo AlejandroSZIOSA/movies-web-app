@@ -1,0 +1,20 @@
+.container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poster-container {
+  display: flex;
+}
+
+.poster-img {
+  width: 350px;
+}
+.container p {
+  font-size: larger;
+}
+.back-btn__container {
+  padding-bottom: 20px;
+}

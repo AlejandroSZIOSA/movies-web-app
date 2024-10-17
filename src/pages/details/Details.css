@@ -5,8 +5,8 @@
   align-items: center;
 }
 
-.poster-container {
-  display: flex;
+.container div h1 {
+  text-align: center;
 }
 
 .poster-img {
@@ -15,6 +15,33 @@
 .container p {
   font-size: larger;
 }
+.back-btn-hide__container {
+  display: none;
+}
+
 .back-btn__container {
   padding-bottom: 20px;
+}
+
+@media (min-width: 413px) {
+  .container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  section {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  .container p {
+    font-size: x-large;
+  }
+  .back-btn-hide__container {
+    display: flex;
+    justify-content: center;
+  }
+  .back-btn__container {
+    display: none;
+  }
 }

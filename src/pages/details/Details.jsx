@@ -23,12 +23,14 @@ export default function DetailsPage() {
 
   return (
     <main className="container">
-      <h1>Details</h1>
-      <img
-        className="poster-img"
-        src={`${BASE_POSTER_URL}/${poster_path}`}
-        alt={title}
-      />
+      <div>
+        <h1>Details</h1>
+        <img
+          className="poster-img"
+          src={`${BASE_POSTER_URL}/${poster_path}`}
+          alt={title}
+        />
+      </div>
       <section>
         <p>
           <strong>Tmdb Id:</strong> {id}
@@ -45,6 +47,9 @@ export default function DetailsPage() {
         <p>
           <strong>Popularity</strong>: {popularity}
         </p>
+        <div className="back-btn-hide__container">
+          <BackBtn onClickFn={() => navigate("..")} />
+        </div>
       </section>
       <div className="back-btn__container">
         <BackBtn onClickFn={() => navigate("..")} />

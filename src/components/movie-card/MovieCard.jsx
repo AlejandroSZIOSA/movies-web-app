@@ -30,7 +30,6 @@ export default function MovieCard({ movie }) {
 
   return (
     <article className="movie-card__article">
-      <h2>📽️</h2>
       <div className="movie-poster__container">
         <img
           src={`${BASE_POSTER_URL}/${poster_path}`}
@@ -39,7 +38,7 @@ export default function MovieCard({ movie }) {
         ></img>
       </div>
       <p>
-        Release date: <strong> {release_date}</strong>
+        <strong> {release_date}</strong>
       </p>
       <div className="buttons-container">
         <button>

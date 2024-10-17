@@ -5,7 +5,7 @@ import { BASE_POSTER_URL } from "../../services/api-host";
 import "./MovieCard.css";
 
 export default function MovieCard({ movie }) {
-  const { id, title, release_date, poster_path } = movie;
+  const { id, release_date, poster_path } = movie;
 
   const favorites = useSelector((state) => state.favorites_.favorite_list);
   const dispatch = useDispatch();

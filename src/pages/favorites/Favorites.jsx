@@ -21,7 +21,9 @@ export default function FavoritesPage() {
   return (
     <main className="favorites-container">
       <h1>Favorite List</h1>
-      <FavoriteList />
+      <div className="favorite-table__container">
+        <FavoriteList />
+      </div>
       <div>
         <BackBtn onClickFn={() => navigate("..")} />
       </div>

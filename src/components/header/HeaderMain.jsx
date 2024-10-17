@@ -15,7 +15,7 @@ export default function HeaderMain() {
         className="logo"
         src={`${tmdbLogo}`}
         alt="logo"
-        width="70"
+        width="100"
         height="auto"
       />
       <div className="nav-container">

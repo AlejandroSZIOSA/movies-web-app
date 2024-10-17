@@ -5,22 +5,21 @@
   height: 50px;
   background-color: rgb(255, 211, 164);
   /* TODO: set margin=0 in the index-css */
-  position: sticky; /* Makes it sticky */
-  top: 0; /* Sticks the header to the top of the viewport */
-  z-index: 1000; /* Ensures it stays above other content */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .logo {
-  padding: 5px;
+  padding-left: 5px;
 }
 .nav-container {
   display: flex;
-  /* background-color: antiquewhite; */
 }
 .favorite-icon__container {
   display: flex;
   align-items: center;
   font-size: xx-large;
-  padding-right: 12px;
+  padding-right: 20px;
 }
 .favorite-icon {
   width: 35px;

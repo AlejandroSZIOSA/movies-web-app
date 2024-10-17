@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
 import { BASE_POSTER_URL } from "../../services/api-host";
 
-import BackBtn from "../common/Button/BackBtn";
+import CustomBtn from "../common/Button/CustomBtn";
 import "./MovieCard.css";
 
 export default function MovieCard({ movie }) {
@@ -44,20 +44,20 @@ export default function MovieCard({ movie }) {
       </div>
 
       <div className="buttons-container">
-        <BackBtn bgColor="yellow">
+        <CustomBtn bgColor="yellow">
           {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
           {/* Send an Object to a page  */}
           <Link to="/details" state={{ movie }}>
             Details
           </Link>
-        </BackBtn>
-        <BackBtn
+        </CustomBtn>
+        <CustomBtn
           id="addFavoriteBtn"
-          onClick={handleAddFavorite}
+          onClickFn={handleAddFavorite}
           bgColor="black"
         >
           Add to Favorite List
-        </BackBtn>
+        </CustomBtn>
       </div>
     </article>
   );

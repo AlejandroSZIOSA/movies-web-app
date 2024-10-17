@@ -1,7 +1,7 @@
 /* import { useParams } from "react-router-dom"; */
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import BackBtn from "../../components/common/Button/BackBtn";
+import BackBtn from "../../components/common/Button/CustomBtn";
 import { BASE_POSTER_URL } from "../../services/api-host";
 import "./Details.css";
 

@@ -1,5 +1,5 @@
-import "./BackBtn.css";
-export default function BackBtn({ children, onClickFn, bgColor }) {
+import "./CustomBtn.css";
+export default function CustomBtn({ children, onClickFn, bgColor }) {
   return (
     <>
       <button

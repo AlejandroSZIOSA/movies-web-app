@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import FavoriteList from "../../components/favorite-list/FavoriteList";
-import BackBtn from "../../components/common/Button/BackBtn";
+import BackBtn from "../../components/common/Button/CustomBtn";
 import { useSelector } from "react-redux";
 import "./Favorites.css";
 

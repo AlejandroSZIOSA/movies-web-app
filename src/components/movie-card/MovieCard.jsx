@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
 import { BASE_POSTER_URL } from "../../services/api-host";
+
+import BackBtn from "../common/Button/BackBtn";
 import "./MovieCard.css";
 
 export default function MovieCard({ movie }) {
@@ -42,16 +44,20 @@ export default function MovieCard({ movie }) {
       </div>
 
       <div className="buttons-container">
-        <button>
+        <BackBtn bgColor="yellow">
           {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
           {/* Send an Object to a page  */}
           <Link to="/details" state={{ movie }}>
             Details
           </Link>
-        </button>
-        <button id="addFavoriteBtn" onClick={handleAddFavorite}>
+        </BackBtn>
+        <BackBtn
+          id="addFavoriteBtn"
+          onClick={handleAddFavorite}
+          bgColor="black"
+        >
           Add to Favorite List
-        </button>
+        </BackBtn>
       </div>
     </article>
   );

@@ -5,6 +5,10 @@
   font-size: large;
 }
 
+.favorites-button__container {
+  padding: 20px;
+}
+
 @media (min-width: 413px) {
   .favorites-container {
     font-size: larger;

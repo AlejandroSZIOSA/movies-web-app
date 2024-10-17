@@ -36,7 +36,6 @@ const favoritesSlice = createSlice({
       // Mutating the array directly
       state.favorite_list.push(action.payload);
     },
-
     //Remove Item by Id
     REMOVE_FAVORITE(state, action) {
       const itemId = action.payload;
@@ -44,24 +43,6 @@ const favoritesSlice = createSlice({
         (item) => item.id !== itemId
       );
     },
-
-    /* CHANGE_QUANTITY(state, action) {
-      // Mutating the array directly
-      const { id } = action.payload.p;
-      let newQuantity = action.payload.newQuantity;
-      const existingProduct = state.cart_list.find((p) => p.id === id);
-      if (existingProduct) {
-        existingProduct.quantity = newQuantity;
-      }
-    }, */
-
-    /* CHANGE_QUANTITY_TEST(state, action) {
-      state.total_products = action.payload;
-    }, */
-
-    /* CHANGE_TOTAL_SUMMA(state, action) {
-      state.totalSuma = action.payload.totalSuma;
-    }, */
   },
 });
 

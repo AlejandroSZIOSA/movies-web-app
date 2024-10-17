@@ -1,11 +1,13 @@
-export default function BackBtn({ onClickFn }) {
+import "./BackBtn.css";
+export default function BackBtn({ children, onClickFn, bgColor }) {
   return (
     <>
       <button
-        style={{ background: "green", color: "white" }}
+        id="btn-back"
+        style={{ background: bgColor, color: "white" }}
         onClick={onClickFn}
       >
-        Go back
+        {children}
       </button>
     </>
   );

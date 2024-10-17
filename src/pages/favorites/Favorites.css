@@ -7,7 +7,7 @@
 
 @media (min-width: 413px) {
   .favorites-container {
-    font-size: x-large;
+    font-size: larger;
   }
   .favorite-table__container {
     width: 60%;

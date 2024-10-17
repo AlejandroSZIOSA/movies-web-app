@@ -49,12 +49,16 @@ export default function DetailsPage() {
             <strong>Popularity</strong>: {popularity}
           </p>
           <div className="back-btn-hide__container">
-            <BackBtn onClickFn={() => navigate("..")} />
+            <BackBtn onClickFn={() => navigate("..")} bgColor="green">
+              Go Back
+            </BackBtn>
           </div>
         </div>
       </section>
       <div className="back-btn__container">
-        <BackBtn onClickFn={() => navigate("..")} />
+        <BackBtn onClickFn={() => navigate("..")} bgColor="green">
+          Go Back
+        </BackBtn>
       </div>
     </main>
   );

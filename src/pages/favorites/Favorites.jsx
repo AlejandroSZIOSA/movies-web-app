@@ -25,7 +25,9 @@ export default function FavoritesPage() {
         <FavoriteList />
       </div>
       <div>
-        <BackBtn onClickFn={() => navigate("..")} />
+        <BackBtn onClickFn={() => navigate("..")} bgColor="green">
+          Go Back
+        </BackBtn>
       </div>
     </main>
   );

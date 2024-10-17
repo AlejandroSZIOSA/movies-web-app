@@ -29,7 +29,7 @@ export default function HomePage() {
   return (
     <main className="home-main">
       <MetaTags title="Home page" description="Search the Latest movies" />
-      <h1>Latest Movies 2024</h1>
+      <h1>Latest Movies</h1>
       <div className="search-bar__container">
         <SearchBar movies={MOVIES} />
       </div>

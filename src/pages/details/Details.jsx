@@ -32,23 +32,25 @@ export default function DetailsPage() {
         />
       </div>
       <section>
-        <p>
-          <strong>Tmdb Id:</strong> {id}
-        </p>
-        <p>
-          <strong>Original Title</strong>: {original_title}
-        </p>
-        <p>
-          <strong>Description</strong>: {overview}
-        </p>
-        <p>
-          <strong>Rating</strong>: {vote_average}
-        </p>
-        <p>
-          <strong>Popularity</strong>: {popularity}
-        </p>
-        <div className="back-btn-hide__container">
-          <BackBtn onClickFn={() => navigate("..")} />
+        <div className="paragraphs-container">
+          <p>
+            <strong>Tmdb Id:</strong> {id}
+          </p>
+          <p>
+            <strong>Original Title</strong>: {original_title}
+          </p>
+          <p>
+            <strong>Description</strong>: {overview}
+          </p>
+          <p>
+            <strong>Rating</strong>: {vote_average}
+          </p>
+          <p>
+            <strong>Popularity</strong>: {popularity}
+          </p>
+          <div className="back-btn-hide__container">
+            <BackBtn onClickFn={() => navigate("..")} />
+          </div>
         </div>
       </section>
       <div className="back-btn__container">

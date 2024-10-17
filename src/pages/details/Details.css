@@ -4,21 +4,21 @@
   flex-direction: column;
   align-items: center;
 }
-
 .container div h1 {
   text-align: center;
 }
-
 .poster-img {
   width: 350px;
 }
-.container p {
+.paragraphs-container {
+  padding: 10px;
+}
+.paragraphs-container p {
   font-size: larger;
 }
 .back-btn-hide__container {
   display: none;
 }
-
 .back-btn__container {
   padding-bottom: 20px;
 }
@@ -34,7 +34,10 @@
     background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
-  .container p {
+  .paragraphs-container {
+    padding: 20px;
+  }
+  .paragraphs-container p {
     font-size: x-large;
   }
   .back-btn-hide__container {

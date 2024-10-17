@@ -30,9 +30,9 @@ export default function HomePage() {
     <main className="home-main">
       <MetaTags title="Home page" description="Search the Latest movies" />
       <h1>Latest Movies 2024</h1>
-      <section>
+      <div className="search-bar__container">
         <SearchBar movies={MOVIES} />
-      </section>
+      </div>
     </main>
   );
 }

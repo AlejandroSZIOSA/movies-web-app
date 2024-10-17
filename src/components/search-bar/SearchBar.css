@@ -3,3 +3,6 @@
   flex-direction: column;
   width: 300px;
 }
+.container input {
+  padding: 5px;
+}

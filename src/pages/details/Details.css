@@ -26,6 +26,7 @@
     flex-direction: row;
     gap: 20px;
     font-size: large;
+    justify-content: center;
   }
   section {
     width: 600px;

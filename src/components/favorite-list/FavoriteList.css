@@ -1,0 +1,21 @@
+.remove-btn {
+  margin-left: 18px;
+}
+
+table {
+  width: 90%;
+  table-layout: auto;
+  border-collapse: initial;
+  font-size: larger;
+}
+
+/* @media (min-width: 413px) {
+  .movies-list__container {
+    display: flex;
+    overflow-y: auto;
+    width: 1400px;
+    border: 1px solid #970000;
+    padding: 5px;
+    background-color: #ffffff;
+  }
+} */

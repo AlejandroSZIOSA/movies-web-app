@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
+import "./FavoriteList.css";
 
 export default function FavoriteList() {
   const dispatch = useDispatch();
@@ -25,7 +26,12 @@ export default function FavoriteList() {
               <td>{m.title}</td>
               <td>{m.release_date}</td>
               <td>
-                <button onClick={() => handleRemoveFavorite(m.id)}>🗑️</button>
+                <button
+                  className="remove-btn"
+                  onClick={() => handleRemoveFavorite(m.id)}
+                >
+                  🗑️
+                </button>
               </td>
             </tr>
           ))}

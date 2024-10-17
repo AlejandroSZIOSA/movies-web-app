@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import FavoriteList from "../../components/favorite-list/FavoriteList";
 import BackBtn from "../../components/common/Button/BackBtn";
 import { useSelector } from "react-redux";
+import "./Favorites.css";
 
 export default function FavoritesPage() {
   const totalFavorites = useSelector(
@@ -11,14 +12,14 @@ export default function FavoritesPage() {
 
   if (totalFavorites == 0) {
     return (
-      <main>
+      <main style={{ textAlign: "center" }}>
         <h1>Favorite List is Empty</h1>
       </main>
     );
   }
 
   return (
-    <main className="container">
+    <main className="favorites-container">
       <h1>Favorite List</h1>
       <FavoriteList />
       <div>

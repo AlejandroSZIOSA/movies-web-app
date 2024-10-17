@@ -1,10 +1,10 @@
-.container {
+.details-container {
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container div h1 {
+.details-container div h1 {
   text-align: center;
 }
 .poster-img {
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 413px) {
-  .container {
+  .details-container {
     flex-direction: row;
     gap: 20px;
   }

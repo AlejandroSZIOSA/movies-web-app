@@ -4,12 +4,10 @@
   align-items: center;
   height: 50px;
   background-color: rgb(255, 211, 164);
-  /* TODO: hold the position in all pages */
-  /* position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000; */
+  /* TODO: set margin=0 in the index-css */
+  position: sticky; /* Makes it sticky */
+  top: 0; /* Sticks the header to the top of the viewport */
+  z-index: 1000; /* Ensures it stays above other content */
 }
 .logo {
   padding: 5px;

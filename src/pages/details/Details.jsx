@@ -22,7 +22,7 @@ export default function DetailsPage() {
   const navigate = useNavigate();
 
   return (
-    <main className="container">
+    <main className="details-container">
       <div>
         <h1>Details</h1>
         <img

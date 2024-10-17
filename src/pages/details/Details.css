@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: large;
 }
 .details-container div h1 {
   text-align: center;
@@ -12,9 +13,6 @@
 }
 .paragraphs-container {
   padding: 10px;
-}
-.paragraphs-container p {
-  font-size: larger;
 }
 .back-btn-hide__container {
   display: none;
@@ -27,6 +25,7 @@
   .details-container {
     flex-direction: row;
     gap: 20px;
+    font-size: large;
   }
   section {
     width: 600px;

@@ -12,8 +12,8 @@ export default function FavoritesPage() {
 
   if (totalFavorites == 0) {
     return (
-      <main style={{ textAlign: "center" }}>
-        <h1>Favorite List is Empty</h1>
+      <main>
+        <h1 style={{ textAlign: "center" }}>Empty List</h1>
       </main>
     );
   }

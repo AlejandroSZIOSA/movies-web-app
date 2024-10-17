@@ -3,9 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: large;
 }
 .search-bar__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 413px) {
+  .home-main {
+    font-size: larger;
+  }
 }

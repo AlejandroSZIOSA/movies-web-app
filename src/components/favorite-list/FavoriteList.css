@@ -11,4 +11,7 @@ table {
   .remove-btn {
     margin-left: 40%;
   }
+  table {
+    font-size: x-large;
+  }
 }

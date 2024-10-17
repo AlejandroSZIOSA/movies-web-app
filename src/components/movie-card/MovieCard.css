@@ -23,12 +23,12 @@
 .buttons-container {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 @media (min-width: 413px) {
   .movie-card__article {
-    width: 200px;
+    width: 280px;
     /* margin: 20px;
     background-color: #dd6464;
     border-radius: 10px;

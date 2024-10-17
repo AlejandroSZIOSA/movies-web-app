@@ -30,6 +30,9 @@ export default function MovieCard({ movie }) {
 
   return (
     <article className="movie-card__article">
+      <p>
+        <strong> {release_date}</strong>
+      </p>
       <div className="movie-poster__container">
         <img
           src={`${BASE_POSTER_URL}/${poster_path}`}
@@ -37,9 +40,7 @@ export default function MovieCard({ movie }) {
           height="auto"
         ></img>
       </div>
-      <p>
-        <strong> {release_date}</strong>
-      </p>
+
       <div className="buttons-container">
         <button>
           {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}

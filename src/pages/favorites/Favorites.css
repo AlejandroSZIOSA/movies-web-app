@@ -1,11 +1,8 @@
-/* .favorites-container h1 {
-  text-align: center;
-} */
 .favorites-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: larger;
+  font-size: large;
 }
 
 @media (min-width: 413px) {

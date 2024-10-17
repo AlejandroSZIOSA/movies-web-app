@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchMovies_ } from "../utils/redux/store";
-import SearchBar from "../components/search-bar/SearchBar";
-import MetaTags from "../seo/MetaTags";
-import "../styles/Home.css";
+import { fetchMovies_ } from "../../utils/redux/store";
+import SearchBar from "../../components/search-bar/SearchBar";
+import MetaTags from "../../seo/MetaTags";
+import "./Home.css";
 
 export default function HomePage() {
   const dispatch = useDispatch();

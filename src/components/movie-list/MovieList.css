@@ -3,6 +3,16 @@
   list-style: none;
 }
 
+@media (min-width: 413px) {
+  .movies-list__container {
+    display: flex;
+    overflow-y: auto;
+    width: 1400px;
+    border: 1px solid #970000;
+    padding: 5px;
+    background-color: #ffffff;
+  }
+}
 /* .movie-list-item {
   display: flex;
   padding-bottom: 20px;

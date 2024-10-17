@@ -21,8 +21,8 @@ export default function HeaderMain() {
       <div className="nav-container">
         <NavigationMenu />
       </div>
-      <div className="menu-container">
-        <img src={favoriteIcon} alt="Favorite Icon" />
+      <div className="favorite-icon__container">
+        <img className="favorite-icon" src={favoriteIcon} alt="Favorite Icon" />
         <p> = {totalFavorites}</p>
       </div>
     </header>

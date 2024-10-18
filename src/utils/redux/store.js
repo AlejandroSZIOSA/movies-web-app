@@ -3,7 +3,6 @@ import {
   createSlice,
   createAsyncThunk,
 } from "@reduxjs/toolkit";
-import axios from "axios";
 
 import { BASE_API_URL } from "../../services/api-host";
 import { MY_BEARER_TOKEN } from "../../services/api-host";

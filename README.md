@@ -7,6 +7,7 @@ Tools Used:
 
 Services Used:
 -Tmdb Movies
+-Google Analytics
 
 Technologies Used:
 -Vanilla Css
@@ -14,7 +15,8 @@ Technologies Used:
 -Redux Toolkit
 -Cypress
 -Helmet
+-Google analytics
+-Google tag manager
 
 Responsive to:
--Galaxy S20 Ultra Android 11
--Desktop
+-Galaxy S20 Ultra Android 11 / Desktop

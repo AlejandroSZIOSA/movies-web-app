@@ -3,8 +3,9 @@ import HeaderMain from "../components/header/HeaderMain";
 import { useEffect } from "react";
 
 import ReactGa from "react-ga4";
-
 import { TRACKING_ID } from "../services/api-host";
+
+// Initialize Google Analytics
 ReactGa.initialize(TRACKING_ID);
 
 export default function RootLayout() {

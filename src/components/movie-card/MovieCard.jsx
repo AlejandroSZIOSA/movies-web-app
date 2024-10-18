@@ -8,7 +8,7 @@ import "./MovieCard.css";
 
 import ReactGa from "react-ga4";
 
-//4- Event Listener
+//Event Listener google tag manager
 ReactGa.initialize(TRACKING_GTM_ID);
 
 export default function MovieCard({ movie }) {
@@ -55,7 +55,6 @@ export default function MovieCard({ movie }) {
 
       <div className="buttons-container">
         <CustomBtn bgColor="yellow">
-          {/* OPTIONAL:<Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
           {/* Send an Object to a page  */}
           <Link to="/details" state={{ movie }}>
             Details

@@ -9,7 +9,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { TRACKING_GTM_ID } from "./services/api-host.js";
 import TagManager from "react-gtm-module";
 
-//Created object then will pass as argument to the Tag manager.initialize method
+//Created an object, then will pass as argument to the Tag manager.initialize method
 const tagManagerArgs = {
   gtmId: TRACKING_GTM_ID,
 };

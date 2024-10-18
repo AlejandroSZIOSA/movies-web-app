@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
-import "./FavoriteList.css";
+import "./FavoriteTable.css";
 
-export default function FavoriteList() {
+export default function FavoriteTable() {
   const dispatch = useDispatch();
   const favorites = useSelector((state) => state.favorites_.favorite_list);
 

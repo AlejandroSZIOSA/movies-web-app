@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import FavoriteList from "../../components/favorite-list/FavoriteList";
+import FavoriteTable from "../../components/favorite-table/FavoriteTable";
 import BackBtn from "../../components/common/Button/CustomBtn";
 import { useSelector } from "react-redux";
 import "./Favorites.css";
@@ -20,9 +20,9 @@ export default function FavoritesPage() {
 
   return (
     <main className="favorites-container">
-      <h1>Favorite List</h1>
+      <h1>Favorites</h1>
       <div className="favorite-table__container">
-        <FavoriteList />
+        <FavoriteTable />
       </div>
       <div className="favorites-button__container">
         <BackBtn onClickFn={() => navigate("..")} bgColor="green">

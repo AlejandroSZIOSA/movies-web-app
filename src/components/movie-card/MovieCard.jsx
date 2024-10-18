@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
-import { BASE_POSTER_URL } from "../../services/api-host";
+import { BASE_POSTER_URL, TRACKING_GTM_ID } from "../../services/api-host";
 
 import CustomBtn from "../common/Button/CustomBtn";
 import "./MovieCard.css";
+
+import ReactGa from "react-ga4";
+
+//4- Event Listener
+ReactGa.initialize(TRACKING_GTM_ID);
 
 export default function MovieCard({ movie }) {
   const { id, release_date, poster_path } = movie;
@@ -14,6 +19,11 @@ export default function MovieCard({ movie }) {
 
   function handleAddFavorite() {
     if (!checkFavoriteDuplicateId()) {
+      ReactGa.event({
+        category: "Button",
+        action: "Clicked Add to Favorites",
+        label: "Add a Favorite",
+      });
       const copyMovie = { ...movie }; //Copy Object
       dispatch(FAVORITES_SLICE_ACTIONS.ADD_PRODUCT(copyMovie));
     }
@@ -45,7 +55,7 @@ export default function MovieCard({ movie }) {
 
       <div className="buttons-container">
         <CustomBtn bgColor="yellow">
-          {/* <Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
+          {/* OPTIONAL:<Link to={`/details/${id}/${title}/${overview}`}>Details</Link> */}
           {/* Send an Object to a page  */}
           <Link to="/details" state={{ movie }}>
             Details
@@ -56,7 +66,7 @@ export default function MovieCard({ movie }) {
           onClickFn={handleAddFavorite}
           bgColor="black"
         >
-          Add to Favorite List
+          Add to Favorites
         </CustomBtn>
       </div>
     </article>

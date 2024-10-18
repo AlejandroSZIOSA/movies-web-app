@@ -4,7 +4,12 @@ import { fetchMovies_ } from "../../utils/redux/store";
 import SearchBar from "../../components/search-bar/SearchBar";
 import MetaTags from "../../seo/MetaTags";
 import "./Home.css";
-
+/* 
+import { useLocation } from "react-router-dom";
+import ReactGa from "react-ga4";
+import { TRACKING_ID } from "../../services/api-host";
+ReactGa.initialize(TRACKING_ID); 
+ */
 export default function HomePage() {
   const dispatch = useDispatch();
   const MOVIES = useSelector((state) => state.movies_.movie_list);
@@ -15,8 +20,16 @@ export default function HomePage() {
     if (status === "idle") {
       dispatch(fetchMovies_());
     }
-    console.log(MOVIES);
   }, [status, dispatch]);
+
+  /* const location = useLocation();
+  useEffect(() => {
+    //Track and Send the location when location changes
+    ReactGa.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]); */
 
   if (status === "loading...") {
     return <p>{status}</p>;

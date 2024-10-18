@@ -7,7 +7,6 @@ import {
 import { BASE_API_URL } from "../../services/api-host";
 import { MY_BEARER_TOKEN } from "../../services/api-host";
 
-// console.log(MY_BEARER_TOKEN);
 export const fetchMovies_ = createAsyncThunk(
   "movies/fetchMovies_",
   async () => {

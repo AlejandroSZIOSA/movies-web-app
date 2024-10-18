@@ -13,13 +13,14 @@ export const fetchMovies_ = createAsyncThunk(
   "movies/fetchMovies_",
   async () => {
     try {
-      const res = await axios.get(BASE_API_URL, {
+      const res = await fetch(BASE_API_URL, {
         headers: {
           Authorization: `Bearer ${MY_BEARER_TOKEN}`,
           "Content-Type": "application/json",
         },
       });
-      return res.data.results; //Payload
+      const data = await res.json();
+      return data.results; //Payload
     } catch (error) {
       console.error.message;
     }

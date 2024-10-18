@@ -1,6 +1,5 @@
-//5 MetaTag "FN Component" using Helmet, Schemas
+//"FN Component" using Helmet, Schemas
 import React from "react";
-//Import and Destructuring an object (many functions)
 import { Helmet } from "react-helmet-async";
 
 const MetaTags = ({ title, description }) => {

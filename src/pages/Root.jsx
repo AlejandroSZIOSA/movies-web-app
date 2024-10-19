@@ -8,6 +8,7 @@ import { TRACKING_ID } from "../services/api-host";
 // Initialize Google Analytics
 ReactGa.initialize(TRACKING_ID);
 
+//IMPORTANT: This component is use It in the App.jsx
 export default function RootLayout() {
   /* console.log("In the RootLayout"); */
   const location = useLocation();

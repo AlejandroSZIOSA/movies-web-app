@@ -3,25 +3,19 @@ import {
   createSlice,
   createAsyncThunk,
 } from "@reduxjs/toolkit";
-
-import { BASE_API_URL } from "../../services/api-host";
-import { MY_BEARER_TOKEN } from "../../services/api-host";
+import { MY_BEARER_TOKEN, BASE_API_URL } from "../../services/api-host";
 
 export const fetchMovies_ = createAsyncThunk(
   "movies/fetchMovies_",
   async () => {
-    try {
-      const res = await fetch(BASE_API_URL, {
-        headers: {
-          Authorization: `Bearer ${MY_BEARER_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      });
-      const data = await res.json();
-      return data.results; //Payload
-    } catch (error) {
-      console.error.message;
-    }
+    const res = await fetch(BASE_API_URL, {
+      headers: {
+        Authorization: `Bearer ${MY_BEARER_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await res.json();
+    return data.results; //Payload
   }
 );
 

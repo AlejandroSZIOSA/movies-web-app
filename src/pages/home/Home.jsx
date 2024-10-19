@@ -17,12 +17,10 @@ export default function HomePage() {
     }
   }, [status, dispatch]);
 
-  if (status === "loading...") {
-    return <p>{status}</p>;
-  }
+  if (status === "loading") return <h1>Loading...</h1>;
 
-  if (status === "failed") {
-    return <p>Failed to fetch data: {error}</p>;
+  if (!MOVIES) {
+    return <p>Failed to fetch movie list</p>;
   }
 
   return (

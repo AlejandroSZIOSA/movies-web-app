@@ -10,7 +10,7 @@ export default function FavoritesPage() {
   );
   const navigate = useNavigate();
 
-  if (totalFavorites == 0) {
+  if (totalFavorites === 0) {
     return (
       <main>
         <h1 style={{ textAlign: "center" }}>Empty List</h1>

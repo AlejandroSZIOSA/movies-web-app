@@ -9,10 +9,10 @@ import { TRACKING_ID } from "../services/api-host";
 ReactGa.initialize(TRACKING_ID);
 
 export default function RootLayout() {
-  console.log("RootLayout");
+  /* console.log("In the RootLayout"); */
   const location = useLocation();
   useEffect(() => {
-    //Track and Send the location when location changes
+    //Track and Send the location to Google Analytics when location changes
     ReactGa.send({
       hitType: "pageview",
       page: location.pathname + location.search,

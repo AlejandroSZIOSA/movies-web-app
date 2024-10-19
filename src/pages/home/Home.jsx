@@ -9,7 +9,6 @@ export default function HomePage() {
   const dispatch = useDispatch();
   const MOVIES = useSelector((state) => state.movies_.movie_list);
   const status = useSelector((state) => state.movies_.status);
-  const error = useSelector((state) => state.movies_.error);
 
   useEffect(() => {
     if (status === "idle") {
@@ -18,11 +17,7 @@ export default function HomePage() {
   }, [status, dispatch]);
 
   if (status === "loading") return <h1>Loading...</h1>;
-
-  if (!MOVIES) {
-    return <p>Failed to fetch movie list</p>;
-  }
-
+  if (!MOVIES) return <p>Failed to fetch movie list</p>;
   return (
     <main className="home-main">
       <MetaTags

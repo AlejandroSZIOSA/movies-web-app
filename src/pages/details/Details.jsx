@@ -6,7 +6,6 @@ import { BASE_POSTER_URL } from "../../services/api-host";
 import "./Details.css";
 
 export default function DetailsPage() {
-  /* const { movieId } = useParams(); */
   const location = useLocation(); // Get location object
   const { movie } = location.state || {}; // Extract movie from state
   const {

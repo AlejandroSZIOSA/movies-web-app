@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FAVORITES_SLICE_ACTIONS } from "../../utils/redux/store";
 import { BASE_POSTER_URL, TRACKING_GTM_ID } from "../../services/api-host";
-
 import CustomBtn from "../common/Button/CustomBtn";
 import "./MovieCard.css";
 

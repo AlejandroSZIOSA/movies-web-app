@@ -17,7 +17,6 @@ export default function FavoritesPage() {
       </main>
     );
   }
-
   return (
     <main className="favorites-container">
       <h1>Favorites</h1>

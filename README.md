@@ -1,4 +1,4 @@
-# React + Vite / Movie Web App
+# React + Vite / Movies Web App
 
 Installation
 

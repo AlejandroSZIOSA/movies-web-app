@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite / Movie Web App
 
 Installation
 
@@ -8,16 +8,16 @@ Installation
 Running the web app
 3-Inside the root app directory, type npm run dev
 
-Tools Used:
+Tools
 -Firefox Developer Edition
 -Vs Code
 -Postman
 
-Services Used:
+Services
 -Tmdb Movies
 -Google Analytics
 
-Technologies Used:
+Technologies
 -Vanilla Css
 -React-Router-Dom
 -Redux Toolkit
@@ -26,5 +26,5 @@ Technologies Used:
 -Google analytics
 -Google tag manager
 
-Responsive to:
+Responsive
 -Galaxy S20 Ultra Android 11 / Desktop

@@ -2,11 +2,14 @@
 
 Installation
 
-1-Clone the repository from github
-2-Inside the root app directory, type npm install in the terminal
+1-Download the web-app from github
+2-extract the content of the downloaded zip file into your own selected directory
+3-Open your selected directory with Vscode
+4-In Vs Code, open the terminal
+5-Inside the root app directory, type npm install in the terminal
 
 Running the web app
-3-Inside the root app directory, type npm run dev
+6-Inside the root app directory, type npm run dev
 
 Tools
 -Firefox Developer Edition

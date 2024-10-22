@@ -1,33 +1,38 @@
 # React + Vite / Movies Web App
 
-Installation
+## Installation
 
-1-Download the web-app from github repository
-2-extract the content of the downloaded zip file into your own selected directory
-3-Open your selected directory with Vscode
-4-In Vs Code, open the terminal
-5-Inside the root app directory, type npm install in the terminal
+- Download the web-app from github repository
+- extract the content of the downloaded zip file into your own selected directory
+- Open your selected directory with Vscode
+- In Vs Code, open the terminal
+- Inside the root app directory, type npm install in the terminal
 
-Running the web app
-6-Inside the root app directory, type npm run dev
+## Running the web app
 
-Tools
--Firefox Developer Edition
--Vs Code
--Postman
+- Inside the root app directory, type npm run dev
 
-Services
--Tmdb Movies
--Google Analytics
+## Tools
 
-Technologies
--Vanilla Css
--React-Router-Dom
--Redux Toolkit
--Cypress
--Helmet
--Google analytics
--Google tag manager
+- Firefox Developer Edition
+- Vs Code
+- Postman
 
-Responsive
--Galaxy S20 Ultra Android 11 / Desktop
+## Services
+
+- Tmdb Movies
+- Google Analytics
+
+## Technologies
+
+- Vanilla Css
+- React-Router-Dom
+- Redux Toolkit
+- Cypress
+- Helmet
+- Google analytics
+- Google tag manager
+
+## Responsive
+
+- Galaxy S20 Ultra Android 11 / Desktop

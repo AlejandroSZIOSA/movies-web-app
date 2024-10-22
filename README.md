@@ -2,7 +2,7 @@
 
 Installation
 
-1-Download the web-app from github
+1-Download the web-app from github repository
 2-extract the content of the downloaded zip file into your own selected directory
 3-Open your selected directory with Vscode
 4-In Vs Code, open the terminal
